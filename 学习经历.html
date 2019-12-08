@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>学习经历</title>
+  <link rel="stylesheet" href="../layui/css/layui.css">
+  <script src="layui.all.js"></script>
+  <script src="./layui.js"></script>
+</head>
+<body>
+  <ul class="layui-nav layui-bg-blue" lay-filter="">
+  <li class="layui-nav-item"><a href="file:///H:/Sublime%20Text%203/layui/test21.html">首页</a></li>
+  <li class="layui-nav-item layui-this"><a href="file:///H:/Sublime%20Text%203/layui/test22.html">个人简介</a></li>
+  <li class="layui-nav-item"><a href="file:///H:/Sublime%20Text%203/layui/学习经历.html">学习经历</a></li>
+  <li class="layui-nav-item">
+    <a href="javascript:;">爱好兴趣</a>
+    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+      <dd><a href="file:///H:/Sublime%20Text%203/layui/音乐.html">音乐</a></dd>
+      <dd><a href="file:///H:/Sublime%20Text%203/layui/篮球.html">篮球</a></dd>
+      <dd><a href="file:///H:/Sublime%20Text%203/layui/游戏.html">游戏</a></dd>
+    </dl>
+  </li>
+  <li class="layui-nav-item"><a href="file:///H:/Sublime%20Text%203/layui/日常.html">日常</a></li>
+</ul>
+
+<a href="http://www.layui.com" class="layui-btn layui-bg-blue">技术支持</a>
+
+<ul class="layui-timeline">
+  <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe65b;</i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">2006-2012 小学</h3>
+      <p>
+       <strong>陕西省宝鸡市宝钛子校</strong>
+      </p>
+    </div>
+  </li>
+  <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe65b;</i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">2012-2015 初中</h3>
+      <p><strong>陕西省宝鸡市宝钛子校</strong></p>
+
+    </div>
+  </li>
+  <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe65b;</i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">2015-2018 高中</h3>
+      <p>
+        <strong>陕西省宝鸡中学</strong>
+      </p>
+    </div>
+  </li>
+    <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe65b;</i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">2018- 今</h3>
+      <p>
+        <strong>中国矿业大学计算机科学与技术学院</strong>
+      </p>
+    </div>
+  </li>
+</ul>
+
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+ 
+<!-- 你的HTML代码 -->
+ 
+<script src="../layui/layui.js"></script>
+<script>
+//一般直接写在一个js文件中
+layui.use(['layer', 'form'], function(){
+  var layer = layui.layer
+  ,form = layui.form;
+  
+  layer.msg('切换网页');
+});
+</script> 
+
+</body>
+</html>

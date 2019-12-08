@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>篮球</title>
+  <link rel="stylesheet" href="../layui/css/layui.css">
+  <script src="layui.all.js"></script>
+  <script src="./layui.js"></script>
+</head>
+<body>
+  <ul class="layui-nav layui-bg-blue" lay-filter="">
+  <li class="layui-nav-item"><a href="file:///H:/Sublime%20Text%203/layui/test21.html">首页</a></li>
+  <li class="layui-nav-item layui-this"><a href="file:///H:/Sublime%20Text%203/layui/test22.html">个人简介</a></li>
+  <li class="layui-nav-item"><a href="file:///H:/Sublime%20Text%203/layui/学习经历.html">学习经历</a></li>
+  <li class="layui-nav-item">
+    <a href="javascript:;">爱好兴趣</a>
+    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+      <dd><a href="file:///H:/Sublime%20Text%203/layui/音乐.html">音乐</a></dd>
+      <dd><a href="file:///H:/Sublime%20Text%203/layui/篮球.html">篮球</a></dd>
+      <dd><a href="file:///H:/Sublime%20Text%203/layui/游戏.html">游戏</a></dd>
+    </dl>
+  </li>
+  <li class="layui-nav-item"><a href="file:///H:/Sublime%20Text%203/layui/日常.html">日常</a></li>
+</ul>
+
+<a href="http://www.layui.com" class="layui-btn layui-bg-blue">技术支持</a>
+
+<div class="layui-row layui-col-space32">
+  <div class="layui-col-md3">
+    <div class="layui-card">
+  <div class="layui-card-header">关于篮球</div>
+  <div class="layui-card-body">
+   <strong>喜欢的球星</strong>：文斯卡特 欧文 科比
+   <em>简介：</em>喜欢打篮球，偶尔会和朋友出去打打，顺便活动身体，篮球是一项综合性比较强，但对抗强度也很高的运动
+    
+  
+  </div>
+</div>
+  </div>
+  <div class="layui-col-md3">
+    <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=a4e94e0c33fa828bc52e95b19c762a51/a08b87d6277f9e2f1fdfd7011f30e924b999f3d5.jpg" alt="国家队" width="460" height="700">
+  </div>
+  <div class="layui-col-md6">
+    <div class="layui-carousel" id="test1">
+  <div carousel-item>
+    <div><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2156937629,3012540798&fm=26&gp=0.jpg" alt="" width="778" height="440"></div>
+    <div><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575804656053&di=0d3f200d2482ab07934339b0351db2ff&imgtype=0&src=http%3A%2F%2F06.imgmini.eastday.com%2Fmobile%2F20180502%2F20180502112049_4d695d34d0a808b538f691078fdfcb17_1.jpeg" alt="" width="778" height="440"></div>
+    <div><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575804656052&di=dc0c6d960c7e6184b66ee81269847488&imgtype=0&src=http%3A%2F%2Ftu.duoduocdn.com%2Fuploads%2Fday_191109%2F794907814118817884.jpg" alt="" width="778" height="440"></div>
+    <div><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575804656050&di=903811d1a10f58949073c8371ed58b67&imgtype=0&src=http%3A%2F%2Fc2.hoopchina.com.cn%2Fuploads%2Fstar%2Fevent%2Fimages%2F170502%2Fd74e2fcf8df68613469e94e4eed54244e398463e.jpg" alt="" width="778" height="440"></div>
+    <div><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575804656050&di=3f535041def431e1234c88a62dd7dd40&imgtype=0&src=http%3A%2F%2Fshihuo.hupucdn.com%2Fucditor%2F20180102%2F1580x1053_e474262b9c2bf6745397115c80bded29.jpeg" alt="" width="778" height="440"></div>
+  </div>
+</div>
+  </div>
+</div>
+<!-- 条目中可以是任意内容，如：<img src=""> -->
+
+
+
+
+<!-- 你的HTML代码 -->
+ 
+<script src="../layui/layui.js"></script>
+<script>
+//一般直接写在一个js文件中
+layui.use(['layer', 'form'], function(){
+  var layer = layui.layer
+  ,form = layui.form;
+  
+  layer.msg('切换网页');
+});
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  //建造实例
+  carousel.render({
+    elem: '#test1'
+    ,width: '778px'
+    ,height:'440px' //设置容器宽度
+    ,arrow: 'always' 
+    //始终显示箭头
+    //,anim: 'updown' //切换动画方式
+  });
+});
+</script> 
+
+</body>
+</html>
